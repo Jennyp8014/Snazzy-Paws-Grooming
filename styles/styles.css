@@ -5,17 +5,6 @@ img {
   display: block;
   max-width: 100%;
 }
-@media only screen (max-width: 400px) {
-  h2 {
-    font-size: 2em;
-  }
-  img {
-    width: 100%;
-  }
-  p {
-    max-width: 200px;
-  }
-}
 h1 {
   padding: 15px;
   margin: 40px;
@@ -25,44 +14,165 @@ h1 {
   color: #778873;
 }
 .header {
-  float: left;
   background-color: #f1f3e0;
-  margin: 0px;
   width: 100%;
-  max-width: 3000px;
+}
+#menu-toggle {
+  display: none;
+}
+.menu-icon {
+  font-size: 1em;
+  color: #5e6146;
+  padding-right: 5%;
 }
 .topnav {
-  float: right;
   align-items: center;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding: 30px;
-  margin: 5px;
   width: 50%;
   font-family: Arial, Helvetica, sans-serif;
   color: #778873;
   text-decoration: none;
-  font-size: 15pt;
+  font-size: 1em;
+  max-width: 100%;
+}
+@media only screen and (max-width: 1200px) {
+  .topnav {
+    display: none;
+  }
+  .calendar {
+    max-width: 350px;
+    max-height: 400px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 20%;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    margin: none;
+  }
+  .row1 {
+    display: flex;
+    flex-direction: column;
+    column-width: 100%;
+    width: 100%;
+    margin-top: 1%;
+    margin-left: 0%;
+    font-size: 1em;
+    padding-top: 10px;
+  }
+  #image {
+    min-width: 100%;
+    margin-top: 0px;
+  }
+  .header {
+    width: 100%;
+  }
+  .welcome {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footercolumn {
+    min-width: 100%;
+  }
+  .homegallerycolumn2 {
+    display: none;
+  }
+  .homegallerycolumn3 {
+    display: none;
+  }
+  .homegallerycolumn1 {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    align-items: center;
+    padding: 10%;
+  }
+  .row3 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0px;
+  }
+  .row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .serviceshome {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+  }
+  img {
+    width: 100%;
+  }
+  table,
+  th,
+  td,
+  tr {
+    display: table-row;
+    width: 100%;
+  }
+  .galleryrow1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bookingrow1,
+  .bookingrow2 {
+    flex-direction: column;
+  }
+  .bookingrow2 {
+    align-items: center;
+  }
+  .bookingcolumn2 {
+    justify-content: center;
+    width: 100%;
+  }
+  .calendar {
+    max-width: 350px;
+    max-height: 400px;
+    padding-top: 8%;
+    padding-bottom: 8%;
+  }
+  .bookingcolumn3 {
+    padding: 5%;
+  }
+  .contactrow1,
+  .contactrow2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactcolumn3 {
+    padding-top: 10%;
+  }
 }
 #container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-h2 {
-  margin-right: 50px;
-}
 .row1 {
   font-family: Arial, Helvetica, sans-serif;
   color: #778873;
-  margin: 20px;
   padding: 50px;
-  margin-top: 100px;
+  margin-top: 2%;
 }
 .welcome {
   display: flex;
   flex-direction: column;
-  width: 40%;
 }
 #image {
   float: right;
@@ -73,20 +183,34 @@ h2 {
   background-color: #778873;
   color: #f1f3e0;
   padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
+  text-align: center;
+  max-height: 60px;
+}
+.button2 {
+  background-color: #363924;
+  color: #f1f3e0;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  max-height: 60px;
 }
 .row2 {
-  float: right;
   align-items: center;
   display: flex;
-  justify-content: space-between;
-  margin-top: 100px;
   margin-bottom: 0px;
   background-color: #f1f3e0;
   padding: 80px;
   width: 100%;
   color: #778873;
   font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10%;
+}
+.serviceshome {
+  width: 100%;
+  margin-left: 5%;
 }
 .row3 {
   align-items: center;
@@ -105,44 +229,45 @@ h2 {
 .homegallerycolumn1 {
   display: flex;
   flex-direction: column;
-  margin: 40px;
-  margin-right: 100px;
-  margin-left: 100px;
+  width: 30%;
 }
 .homegallerycolumn3 {
   display: flex;
   flex-direction: column;
-  margin-right: 100px;
+  width: 30%;
 }
 .homegallerycolumn2 {
   display: flex;
   flex-direction: column;
+  width: 30%;
 }
 .footer {
   margin-top: 0px;
   background-color: #5e6146;
-  padding: 100px;
+  padding: 10%;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   color: #f1f3e0;
   display: flex;
-  align-items: center;
+  align-items: left;
 }
 .footercolumn {
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
-  width: 40%;
+  margin-right: 3%;
+  width: 30%;
 }
 .footercolumn1 {
   display: flex;
-  justify-content: center;
-  margin-right: 100px;
+  margin-right: 10%;
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 .footercolumn2 {
   display: flex;
-  justify-content: right;
   width: 40%;
+  padding-bottom: 5%;
+  padding-top: 5%;
 }
 .smallbutton {
   background-color: #778873;
@@ -161,16 +286,16 @@ h2 {
 table {
   display: flex;
   justify-content: space-around;
-  padding: 80px;
+  padding: 5%;
   width: 100%;
   color: #778873;
   font-family: Arial, Helvetica, sans-serif;
 }
 th,
 td {
-  padding: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
   width: 30%;
 }
 th {
@@ -182,12 +307,9 @@ th {
 .gallerycolumn1 {
   display: flex;
   flex-direction: column;
-  margin: 50px;
-  margin-right: 20px;
-  width: 20%;
-}
-.gallerycolumn1 {
-  margin-left: 150px;
+  margin: 2%;
+  margin-right: 4%;
+  width: 100%;
 }
 .galleryrow1,
 .galleryheading {
@@ -201,37 +323,37 @@ th {
   color: #f1f3e0;
 }
 .galleryheading {
-  padding-left: 200px;
+  padding-left: 5%;
   padding-top: 150px;
   padding-bottom: 20px;
 }
 .bookingrow1 {
   display: flex;
-  padding: 80px;
-  width: 100%;
+  padding: 10%;
   font-family: Arial, Helvetica, sans-serif;
   color: #f1f3e0;
   background-color: #828567;
   align-items: center;
 }
 .bookingcolumn2 {
-  width: 30%;
+  width: 100%;
   display: flex;
-  justify-content: left;
-  margin-left: 0px;
-  margin-right: 40%;
-  margin-top: 80px;
+  align-items: center;
+  margin-top: 5%;
 }
-
 .bookingcolumn1 {
-  margin-right: 30px;
-  margin-left: 100px;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 .bookingrow2 {
   padding: 50px;
   display: flex;
   background-color: #727555;
   align-items: center;
+  justify-content: space-between;
+}
+.bookingcolumn3 {
+  min-width: 30%;
 }
 .bookingrow3 {
   display: flex;
@@ -239,41 +361,37 @@ th {
   padding: 50px;
   background-color: #afb38f;
 }
-#selectservicebutton {
-  background-color: #778873;
-  color: #f1f3e0;
-  padding: 20px;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 200px;
-  display: flex;
-}
 .calendar {
   display: flex;
   justify-content: right;
-  margin-right: 30px;
-  margin-left: 40%;
+}
+.contactrow1 {
+  display: flex;
+  padding: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f1f3e0;
+  background-color: #828567;
+  align-items: center;
 }
 .contactrow2 {
-  padding: 100px;
+  padding: 10%;
   background-color: #727555;
   display: flex;
   align-items: center;
 }
-.contactcolumn1 {
+.contactcolumn2 {
   color: #f1f3e0;
-  padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
-  width: 30%;
-  margin-left: 100px;
+  width: 100%;
+  padding-right: 10%;
 }
-.contactcolumn2 {
+.contactcolumn3 {
   display: flex;
-  justify-content: flex-end;
-  width: 50%;
-  margin-right: 20px;
+  justify-content: center;
+  width: 100%;
+  margin-right: 2%;
 }
 .contactrow3 {
   display: flex;
