@@ -180,7 +180,7 @@ h1 {
   margin-top: 50px;
 }
 .button {
-  background-color: #778873;
+  background-color: #363924;
   color: #f1f3e0;
   padding: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -270,7 +270,7 @@ h1 {
   padding-top: 5%;
 }
 .smallbutton {
-  background-color: #778873;
+  background-color: #5e6146;
   color: #f1f3e0;
   padding: 10px;
   font-size: 0.8em;
@@ -355,11 +355,15 @@ th {
 .bookingcolumn3 {
   min-width: 30%;
 }
-.bookingrow3 {
+.bookingrow3,
+.contactrow3 {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
   padding: 50px;
   background-color: #afb38f;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #363924;
 }
 .calendar {
   display: flex;
@@ -393,9 +397,14 @@ th {
   width: 100%;
   margin-right: 2%;
 }
-.contactrow3 {
-  display: flex;
-  justify-content: space-around;
-  padding: 70px;
+a:hover {
+  text-decoration: underline;
+  color: #5e6146;
+}
+a:visited {
   background-color: #afb38f;
+  color: #363924;
+}
+form {
+  font-size: 0.9em;
 }

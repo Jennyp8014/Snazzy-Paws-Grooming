@@ -23,7 +23,7 @@
     </header>
     <!-- Here is our page's main content -->
     <main>
-        <div class="bookingrow1">
+        <section class="bookingrow1">
           <img id="image" src="Images/Gallery dog 5.jpg" alt= "Brown dog getting his face trimmed" width="25%">
           <div class="bookingcolumn1">
            <h2>Booking</h2>
@@ -33,18 +33,31 @@
           <div class="bookingcolumn2">
             <a href="#" class="button2">SEE SERVICES</a>
           </div>
-        </div>
-        <div class="bookingrow2">
+        </section>
+        <section class="bookingrow2">
           <div class="bookingcolumn3">
             <a href="#" class="button2">SELECT SERVICE</a>
           </div>
           <div class="calendar">
             <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Pacific%2FAuckland&showPrint=0&src=MTg2N2U0NDUxMjlhZjk4ZDRmZjRlYWY0NGNiYzhkZDk2ODI2ZGY4NGUxNGQwZjgzYmQ5ZjljYmY5NDFiNGZjZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ubmV3X3plYWxhbmQjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23d81b60&color=%230b8043" class=calendar style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
           </div>
-        </div>
-        <div class="bookingrow3">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdSEdvD_QizYt458rPItlAQJpPIIaUYPxXG15B-sl2-c3s8PQ/viewform?embedded=true" width="640" height="940" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
+        </section>
+        <section class="bookingrow3">
+          <h2>Submit Booking</h2><br>
+          <form action="/action_page.php">
+            <label for="ownername">Owner name:</label><br>
+            <input type="text" id="ownername" name="ownername"><br><br>
+            <label for="email">Email address:</label><br>
+            <input type="text" id="email" name="email"><br><br>
+            <label for="dogname">Dog name:</label><br>
+            <input type="text" id="dogname" name="dogname"><br><br>
+            <label for="dogage">Dog age:</label><br>
+            <input type="text" id="dogage" name="dogage"><br><br>
+            <label for="dogbreed">Dog breed:</label><br>
+            <input type="text" id="dogbreed" name="dogbreed"><br><br><br>
+            <input type="submit" value="Submit">
+          </form>
+        </section>
     </main>
     <!-- And here is our main footer that is used across all the pages of our website -->
      <footer class="footer">
