@@ -23,28 +23,74 @@ h1 {
 .menu-icon {
   font-size: 1em;
   color: #5e6146;
-  padding-right: 5%;
+  padding: 5%;
+  cursor: pointer;
 }
-.topnav {
+.topnav,
+.topnav_item {
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 30px;
-  width: 50%;
+  padding: 3rem;
+  width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   color: #778873;
   text-decoration: none;
   font-size: 1em;
   max-width: 100%;
 }
+.topnav {
+  color: #afb38f;
+  margin-right: 0;
+  display: flex;
+  justify-content: right;
+}
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+}
+@media only screen and (min-width: 1200px) {
+  .menu-icon {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .topnav {
     display: none;
   }
+  .topnav a {
+    color: #f1f3e0;
+  }
+  .topnav_item {
+    display: flex;
+    flex-direction: column;
+    color: #afb38f;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  ul,
+  li,
+  a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  }
+  #menu-toggle:checked + .menu-icon + .topnav {
+    display: block;
+    width: 100%;
+  }
   .calendar {
     max-width: 350px;
     max-height: 400px;
+  }
+  a:hover {
+    background-color: #afb38f;
   }
 }
 @media only screen and (max-width: 768px) {

@@ -1,78 +1,113 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snazzy Paws Grooming Services</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <!-- Here is our main header that is used across all the pages of our website -->
     <header class="header" id="container">
-      <img src="images/Logo.png" class="logo" width=8%>
+      <img src="images/Logo.png" class="logo" width="8%" />
       <h1>Snazzy Paws Grooming</h1>
-      <nav class="topnav">
-        <a href="#" class="topnav">Home</a></li>
-        <a href="#" class="topnav">Services</a></li>
-        <a href="#" class="topnav">Gallery</a></li>
-        <a href="#" class="topnav">Booking</a></li>
-        <a href="#" class="topnav">Contact</a></li>
-     </nav>
       <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <nav class="topnav">
+        <ul>
+          <li><a href="index.html" class="topnav_item">Home</a></li>
+          <li><a href="services.html" class="topnav_item">Services</a></li>
+          <li><a href="gallery.html" class="topnav_item">Gallery</a></li>
+          <li><a href="booking.html" class="topnav_item">Booking</a></li>
+          <li><a href="contact.html" class="topnav_item">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <!-- Here is our page's main content -->
     <main>
-        <section class="bookingrow1">
-          <img id="image" src="Images/Gallery dog 5.jpg" alt= "Brown dog getting his face trimmed" width="25%">
-          <div class="bookingcolumn1">
-           <h2>Booking</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quidem ipsa ut cumque maiores architecto tempora explicabo necessitatibus ea animi, at omnis quam obcaecati error a rerum qui provident quae.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur perspiciatis, voluptas tempore ea saepe tempora animi quam quisquam minus nostrum et a voluptatum ipsam alias omnis suscipit magnam consectetur!.</p>
-          </div>
-          <div class="bookingcolumn2">
-            <a href="#" class="button2">SEE SERVICES</a>
-          </div>
-        </section>
-        <section class="bookingrow2">
-          <div class="bookingcolumn3">
-            <a href="#" class="button2">SELECT SERVICE</a>
-          </div>
-          <div class="calendar">
-            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Pacific%2FAuckland&showPrint=0&src=MTg2N2U0NDUxMjlhZjk4ZDRmZjRlYWY0NGNiYzhkZDk2ODI2ZGY4NGUxNGQwZjgzYmQ5ZjljYmY5NDFiNGZjZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ubmV3X3plYWxhbmQjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23d81b60&color=%230b8043" class=calendar style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-          </div>
-        </section>
-        <section class="bookingrow3">
-          <h2>Submit Booking</h2><br>
-          <form action="/action_page.php">
-            <label for="ownername">Owner name:</label><br>
-            <input type="text" id="ownername" name="ownername"><br><br>
-            <label for="email">Email address:</label><br>
-            <input type="text" id="email" name="email"><br><br>
-            <label for="dogname">Dog name:</label><br>
-            <input type="text" id="dogname" name="dogname"><br><br>
-            <label for="dogage">Dog age:</label><br>
-            <input type="text" id="dogage" name="dogage"><br><br>
-            <label for="dogbreed">Dog breed:</label><br>
-            <input type="text" id="dogbreed" name="dogbreed"><br><br><br>
-            <input type="submit" value="Submit">
-          </form>
-        </section>
+      <section class="bookingrow1">
+        <img
+          id="image"
+          src="Images/Gallery dog 5.jpg"
+          alt="Brown dog getting his face trimmed"
+          width="25%"
+        />
+        <div class="bookingcolumn1">
+          <h2>Booking</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            quidem ipsa ut cumque maiores architecto tempora explicabo
+            necessitatibus ea animi, at omnis quam obcaecati error a rerum qui
+            provident quae.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+            consequatur perspiciatis, voluptas tempore ea saepe tempora animi
+            quam quisquam minus nostrum et a voluptatum ipsam alias omnis
+            suscipit magnam consectetur!.
+          </p>
+        </div>
+        <div class="bookingcolumn2">
+          <a href="#" class="button2">SEE SERVICES</a>
+        </div>
+      </section>
+      <section class="bookingrow2">
+        <div class="bookingcolumn3">
+          <a href="#" class="button2">SELECT SERVICE</a>
+        </div>
+        <div class="calendar">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Pacific%2FAuckland&showPrint=0&src=MTg2N2U0NDUxMjlhZjk4ZDRmZjRlYWY0NGNiYzhkZDk2ODI2ZGY4NGUxNGQwZjgzYmQ5ZjljYmY5NDFiNGZjZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4ubmV3X3plYWxhbmQjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23d81b60&color=%230b8043"
+            class="calendar"
+            style="border: solid 1px #777"
+            width="800"
+            height="600"
+            frameborder="0"
+            scrolling="no"
+          ></iframe>
+        </div>
+      </section>
+      <section class="bookingrow3">
+        <h2>Submit Booking</h2>
+        <br />
+        <form action="/action_page.php">
+          <label for="ownername">Owner name:</label><br />
+          <input type="text" id="ownername" name="ownername" /><br /><br />
+          <label for="email">Email address:</label><br />
+          <input type="text" id="email" name="email" /><br /><br />
+          <label for="dogname">Dog name:</label><br />
+          <input type="text" id="dogname" name="dogname" /><br /><br />
+          <label for="dogage">Dog age:</label><br />
+          <input type="text" id="dogage" name="dogage" /><br /><br />
+          <label for="dogbreed">Dog breed:</label><br />
+          <input type="text" id="dogbreed" name="dogbreed" /><br /><br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
     </main>
     <!-- And here is our main footer that is used across all the pages of our website -->
-     <footer class="footer">
-          <div class="footercolumn">
-            <h2>Contact</h2>
-            <p>Email: snazzypaws@gmail.com</p>
-            <p>Phone: 123 456 7890</p>
-            <p>Opening Hours: 8am - 6pm</p>
-          </div>
-          <div class="footercolumn1">
-            <a href="#" class="button">BOOK NOW</a>
-          </div>
-          <div class="footercolumn2">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d907036.5800243929!2d152.30930583368368!3d-27.372228613212435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93f0bb1d4a0365%3A0xad3d4e5b9c3faae8!2sSnazzy%20Paws%20Dog%20Grooming!5e0!3m2!1sen!2sau!4v1765068963803!5m2!1sen!2sau" width="100%" height="100%" class="footermap" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+    <footer class="footer">
+      <div class="footercolumn">
+        <h2>Contact</h2>
+        <p>Email: snazzypaws@gmail.com</p>
+        <p>Phone: 123 456 7890</p>
+        <p>Opening Hours: 8am - 6pm</p>
+      </div>
+      <div class="footercolumn1">
+        <a href="#" class="button">BOOK NOW</a>
+      </div>
+      <div class="footercolumn2">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d907036.5800243929!2d152.30930583368368!3d-27.372228613212435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93f0bb1d4a0365%3A0xad3d4e5b9c3faae8!2sSnazzy%20Paws%20Dog%20Grooming!5e0!3m2!1sen!2sau!4v1765068963803!5m2!1sen!2sau"
+          width="100%"
+          height="100%"
+          class="footermap"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </footer>
   </body>
 </html>
