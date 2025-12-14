@@ -16,6 +16,7 @@ h1 {
 .header {
   background-color: #f1f3e0;
   width: 100%;
+  position: relative;
 }
 #menu-toggle {
   display: none;
@@ -60,6 +61,9 @@ ul {
 @media only screen and (max-width: 1200px) {
   .topnav {
     display: none;
+    background-color: #727555;
+    position: absolute;
+    top: 100%;
   }
   .topnav a {
     color: #f1f3e0;
@@ -67,7 +71,6 @@ ul {
   .topnav_item {
     display: flex;
     flex-direction: column;
-    color: #afb38f;
   }
   ul {
     list-style-type: none;
@@ -83,7 +86,6 @@ ul {
   }
   #menu-toggle:checked + .menu-icon + .topnav {
     display: block;
-    width: 100%;
   }
   .calendar {
     max-width: 350px;
