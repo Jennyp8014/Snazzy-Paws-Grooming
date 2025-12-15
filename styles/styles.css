@@ -61,6 +61,7 @@ ul {
   .topnav {
     display: none;
     background-color: #afb38f;
+    color: #5e6146;
     position: absolute;
     top: 100%;
   }
