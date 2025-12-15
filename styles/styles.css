@@ -65,29 +65,29 @@ ul {
     position: absolute;
     top: 100%;
   }
-}
-.topnav_item {
-  display: flex;
-  flex-direction: column;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-ul,
-li,
-a {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-}
-#menu-toggle:checked + .menu-icon + .topnav {
-  display: block;
-}
-.calendar {
-  max-width: 350px;
-  max-height: 400px;
+  .topnav_item {
+    display: flex;
+    flex-direction: column;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  ul,
+  li,
+  a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  }
+  #menu-toggle:checked + .menu-icon + .topnav {
+    display: block;
+  }
+  .calendar {
+    max-width: 350px;
+    max-height: 400px;
+  }
 }
 a:hover {
   background-color: #afb38f;
