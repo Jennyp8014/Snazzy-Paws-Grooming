@@ -42,7 +42,6 @@ h1 {
   max-width: 100%;
 }
 .topnav {
-  color: #afb38f;
   margin-right: 0;
   display: flex;
   justify-content: right;
@@ -62,6 +61,7 @@ ul {
   .topnav {
     display: none;
     background-color: #727555;
+    color: #afb38f;
     position: absolute;
     top: 100%;
   }
