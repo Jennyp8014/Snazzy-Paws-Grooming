@@ -60,40 +60,36 @@ ul {
 @media only screen and (max-width: 1200px) {
   .topnav {
     display: none;
-    background-color: #727555;
-    color: #afb38f;
+    background-color: #afb38f;
     position: absolute;
     top: 100%;
   }
-  .topnav a {
-    color: #f1f3e0;
-  }
-  .topnav_item {
-    display: flex;
-    flex-direction: column;
-  }
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  ul,
-  li,
-  a {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-  }
-  #menu-toggle:checked + .menu-icon + .topnav {
-    display: block;
-  }
-  .calendar {
-    max-width: 350px;
-    max-height: 400px;
-  }
-  a:hover {
-    background-color: #afb38f;
-  }
+}
+.topnav_item {
+  display: flex;
+  flex-direction: column;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+ul,
+li,
+a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+#menu-toggle:checked + .menu-icon + .topnav {
+  display: block;
+}
+.calendar {
+  max-width: 350px;
+  max-height: 400px;
+}
+a:hover {
+  background-color: #afb38f;
 }
 @media only screen and (max-width: 768px) {
   .logo {
@@ -450,7 +446,7 @@ a:hover {
   color: #5e6146;
 }
 a:visited {
-  background-color: #afb38f;
+  background-color: #828567;
   color: #363924;
 }
 form {
