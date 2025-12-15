@@ -398,6 +398,8 @@ th {
   background-color: #727555;
   align-items: center;
   justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f1f3e0;
 }
 .bookingcolumn3 {
   min-width: 30%;
@@ -455,3 +457,13 @@ a:visited {
 form {
   font-size: 0.9em;
 }
+.selectservice {
+  background-color: #5e6146;
+  color: #f1f3e0;
+  padding: 5%;
+  font-size: 0.8em;
+  text-decoration: none;
+  display:flex;
+  align-items: center;
+}
+h3 {font-size: 1.4em;}
