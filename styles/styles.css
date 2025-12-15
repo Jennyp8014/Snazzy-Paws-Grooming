@@ -4,6 +4,7 @@
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 h1 {
   padding: 15px;
@@ -115,6 +116,7 @@ a:hover {
   #image {
     min-width: 100%;
     margin-top: 0px;
+    width: 25%;
   }
   .header {
     width: 100%;
