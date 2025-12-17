@@ -12,7 +12,7 @@ h1 {
   width: 50%;
   margin-left: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #778873;
+  color: #536550;
 }
 .header {
   background-color: #f1f3e0;
@@ -24,7 +24,7 @@ h1 {
 }
 .menu-icon {
   font-size: 1em;
-  color: #5e6146;
+  color: #536550;
   padding: 5%;
   cursor: pointer;
 }
@@ -37,7 +37,7 @@ h1 {
   padding: 3rem;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  color: #778873;
+  color: #536550;
   text-decoration: none;
   font-size: 1em;
   max-width: 100%;
@@ -62,7 +62,7 @@ ul {
   .topnav {
     display: none;
     background-color: #afb38f;
-    color: #5e6146;
+    color: #536550;
     position: absolute;
     top: 100%;
   }
@@ -213,7 +213,7 @@ a:hover {
 }
 .row1 {
   font-family: Arial, Helvetica, sans-serif;
-  color: #778873;
+  color: #536550;
   padding: 50px;
   margin-top: 2%;
 }
@@ -251,7 +251,7 @@ a:hover {
   background-color: #f1f3e0;
   padding: 80px;
   width: 100%;
-  color: #778873;
+  color: #536550;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 10%;
 }
