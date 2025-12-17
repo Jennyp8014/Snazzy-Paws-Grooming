@@ -377,7 +377,7 @@ th {
   display: flex;
   padding: 10%;
   font-family: Arial, Helvetica, sans-serif;
-  color: #fefff1;
+  color: white;
   background-color: #777a5b;
   align-items: center;
 }
@@ -398,7 +398,7 @@ th {
   align-items: center;
   justify-content: space-between;
   font-family: Arial, Helvetica, sans-serif;
-  color: #f1f3e0;
+  color: white;
 }
 .bookingcolumn3 {
   min-width: 30%;
