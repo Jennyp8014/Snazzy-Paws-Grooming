@@ -163,7 +163,7 @@ a:hover {
     padding: 10%;
   }
   img {
-    width: 100vw;
+    max-inline-size: 100%;
   }
   table,
   th,
