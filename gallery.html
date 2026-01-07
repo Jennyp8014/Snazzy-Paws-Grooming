@@ -1,85 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Snazzy Paws Grooming Gallery" content="View images of a variety of dog breeds who have been groomed at Snazzy Paws">
     <title>Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <!-- Here is our main header that is used across all the pages of our website -->
+     <!-- This is where I have implemented W3.CSS to create a new navigation menu -->
     <header class="header" id="container">
-      <img src="images/Logo.png" class="logo" alt="line drawing of dog sitting profile" width="90" height="90">
-      <h1>Snazzy Paws Grooming</h1>
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-      <nav class="topnav">
-        <ul>
-          <li><a href="index.html" class="topnav_item">Home</a></li>
-          <li><a href="services.html" class="topnav_item">Services</a></li>
-          <li><a href="gallery.html" class="topnav_item">Gallery</a></li>
-          <li><a href="booking.html" class="topnav_item">Booking</a></li>
-          <li><a href="contact.html" class="topnav_item">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="w3-bar w3-card-4 w3-padding-32" style="background-color: #f1f3e0; color:#536550 font-family: Arial, Helvetica, sans-serif; align-items: center;">
+        <img src="images/Logo.png" class="w3-left" alt="line drawing of dog sitting profile" width="90" height="90">
+        <h1 class="w3-left w3-margin-top" style="font-family: Arial, Helvetica, sans-serif; color:#536550; font-size: 1.8em;"><b>Snazzy Paws Grooming</b></h1>
+        <div class="w3-right w3-margin-right">
+          <a href="index.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Home</a>
+          <a href="services.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Services</a>
+          <a href="gallery.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Gallery</a>
+          <a href="booking.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Booking</a>
+          <a href="contact.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Contact</a>
+          <a href="roster.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Staff</a>
+          <a href="privacy.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Privacy</a>
+         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-margin w3-padding-32 w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+        </div>
+        <div id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" style="background-color: #f1f3e0; color:#536550 font-family: Arial, Helvetica, sans-serif;">
+          <a href="index.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Home</a>
+          <a href="services.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Services</a>
+          <a href="gallery.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Gallery</a>
+          <a href="booking.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Booking</a>
+          <a href="contact.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Contact</a>
+          <a href="roster.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Staff</a>
+          <a href="privacy.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Privacy</a>
+        </div>
+      </div>
+      <script>
+        function myFunction() {
+        var x = document.getElementById("demo");
+        if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        } else { 
+        x.className = x.className.replace(" w3-show", "");
+        }
+        }
+      </script>
     </header>
     <!-- Here is our page's main content -->
     <main>
-      <section class="galleryheading">
-        <h2>Gallery</h2>
-      </section>
-      <section class="galleryrow1">
-        <div class="gallerycolumn1">
-          <img src="images/Gallery-dog-1.webp" alt="Long-haired dog with hair blowing in the wind on a green background" width="800" height="650">
-          <br>
-          <img src="images/Gallery-dog-2.webp" alt="Small dog whose hair is being combed on pink background" width="800" height="650">
-          <br>
-          <img src="images/Gallery-dog-3.webp" alt="Husky getting hair brushed" width="800" height="650">
-          <br>
-          <img src="images/Spa-dog.webp" alt="Dog relaxing with towel on head and cucumber on eyes" width="800" height="650">
+      <section style="background-color: #828567;">
+        <br>
+        <div class="w3-padding-32" style="margin-left:5%; color:#f1f3e0">
+          <h2><b>Gallery</b></h2>
         </div>
-        <div class="gallerycolumn2">
-          <img src="images/Flea-and-Tick.webp" alt="Golden Retriever being rinsed off in the shower" width="800" height="650">
-          <br>
-          <img src="images/Senior-Dog.webp" alt="West Highland terrier panting and looking into camera" width="800" height="650">
-          <br>
-          <img src="images/Medicated-Bath.webp" alt="Medium sized dog in the bath covered in bubbles" width="800" height="650">
-          <br>
-          <img src="images/Teeth-dog.webp" alt="Dog getting his teeth cleaned" width="800" height="650">
+        <div class="w3-row-padding w3-margin-top">
+            <div class="w3-quarter">
+              <div class="w3-card">
+                <img src="images/Gallery-dog-1.jpg" style="width:100%">
+                <div class="w3-container">
+                </div>
+              </div>
+            </div>
+            <div class="w3-quarter">
+            <div class="w3-card">
+              <img src="images/Gallery-dog-2.jpg" style="width:100%">
+              <div class="w3-container">
+              </div>
+            </div>
+          </div>
+          <div class="w3-quarter">
+            <div class="w3-card">
+              <img src="images/Gallery-dog-3.jpg" style="width:100%">
+              <div class="w3-container">
+              </div>
+            </div>
+          </div>
+          <div class="w3-quarter">
+              <div class="w3-card">
+                <img src="images/Medicated-Bath.jpg" style="width:100%">
+                <div class="w3-container">
+                </div>
+              </div>
+            </div>
         </div>
-        <div class="gallerycolumn3">
-          <img src="images/Puppy.webp" alt="Small puppy being held in hands while bathed" width="800" height="650">
-          <br>
-          <img src="images/Nails-dog.webp" alt="Dog getting nails clipped" width="800" height="650">
-          <br>
-          <img src="images/De-shedding-Treatment.webp" alt="Brown dog getting his ears scrubbed with soap" width="800" height="650">
-          <br>
-          <img src="images/Ear-dog.webp" alt="Small black and white dog getting his ears cleaned" width="800" height="650">
+        <div class="w3-row-padding w3-margin-top">
+          <div class="w3-quarter">
+            <div class="w3-card">
+              <img src="images/Flea-and-Tick.jpg" style="width:100%">
+              <div class="w3-container">
+              </div>
+            </div>
+          </div>
+          <div class="w3-quarter">
+            <div class="w3-card">
+              <img src="images/Senior-Dog.jpg" style="width:100%">
+              <div class="w3-container">
+              </div>
+            </div>
+          </div>
+          <div class="w3-quarter">
+            <div class="w3-card">
+              <img src="images/Puppy.jpg" style="width:100%">
+              <div class="w3-container">
+              </div>
+            </div>
+          </div>
+          <div class="w3-quarter">
+              <div class="w3-card">
+                <img src="images/De-shedding-Treatment.jpg" style="width:100%">
+                <div class="w3-container">
+                </div>
+              </div>
+            </div>
         </div>
-        <div class="gallerycolumn4">
-          <img src="images/Gallery-dog-4.webp" alt="Small Yorkie with a pony tail" width="800" height="650">
-          <br>
-          <img src="images/Gallery-dog-5.webp" alt="Brown dog getting his face trimmed" width="800" height="650">
-          <br>
-          <img src="images/Gallery-dog-6.webp" alt="Small dog getting his legs trimmed" width="800" height="650">
-          <br>
-          <img src="images/Gallery-dog-9.webp" alt="Close up of long-haired dog getting its face trimmed" width="800" height="650">
+        <div class="w3-row-padding w3-margin-top">
+          <div class="w3-quarter">
+            <div class="w3-card">
+              <img src="images/Gallery-dog-4.jpg" style="width:100%">
+              <div class="w3-container">
+              </div>
+            </div>
+          </div>
+          <div class="w3-quarter">
+            <div class="w3-card">
+              <img src="images/Gallery-dog-5.jpg" style="width:100%">
+              <div class="w3-container">
+              </div>
+            </div>
+          </div>
+          <div class="w3-quarter">
+            <div class="w3-card">
+              <img src="images/Gallery-dog-6.jpg" style="width:100%">
+              <div class="w3-container">
+              </div>
+            </div>
+          </div>
+          <div class="w3-quarter">
+              <div class="w3-card">
+                <img src="images/Gallery-dog-9.jpg" style="width:100%">
+                <div class="w3-container">
+                </div>
+              </div>
+            </div>
         </div>
+        <br>
+        <br>
+        <br>
       </section>
     </main>
     <!-- And here is our main footer that is used across all the pages of our website -->
-    <footer class="footer">
-      <div class="footercolumn">
-        <h2>Contact</h2>
+    <footer class="w3-row-padding" style="background-color: #5e6146;">
+      <div class="w3-quarter w3-padding-32" style="margin-left:5%; color:white">
+        <h2><b>Contact</b></h2>
         <p>Email: snazzypaws@gmail.com</p>
         <p>Phone: 123 456 7890</p>
         <p>Opening Hours: 8am - 6pm</p>
       </div>
-      <div class="footercolumn1">
-        <a href="booking.html" class="button">BOOK NOW</a>
+      <div class="w3-quarter w3-padding-64" style="margin-top:2%;">
+        <a href="booking.html" class="w3-button" style="color:white; background-color: #828567; margin-left:5%;">BOOK NOW</a>
       </div>
-      <div class="footercolumn2">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d907036.5800243929!2d152.30930583368368!3d-27.372228613212435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93f0bb1d4a0365%3A0xad3d4e5b9c3faae8!2sSnazzy%20Paws%20Dog%20Grooming!5e0!3m2!1sen!2sau!4v1765068963803!5m2!1sen!2sau" width="600" height="200" class="footermap" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="w3-quarter w3-padding-32" style="margin-right: 5%; margin-left:5%;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d907036.5800243929!2d152.30930583368368!3d-27.372228613212435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93f0bb1d4a0365%3A0xad3d4e5b9c3faae8!2sSnazzy%20Paws%20Dog%20Grooming!5e0!3m2!1sen!2sau!4v1765068963803!5m2!1sen!2sau" width="400" height="200" class="footermap" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </footer>
   </body>

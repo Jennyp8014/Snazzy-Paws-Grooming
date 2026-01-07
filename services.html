@@ -1,160 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Snazzy Paws Grooming Services" content="Learn about a variety of dog grooming services">
     <title>Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <!-- Here is our main header that is used across all the pages of our website -->
+     <!-- This is where I have implemented W3.CSS to create a new navigation menu -->
     <header class="header" id="container">
-      <img src="images/Logo.png" class="logo" alt="line drawing of dog sitting profile" width="90" height="90">
-      <h1>Snazzy Paws Grooming</h1>
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-      <nav class="topnav">
-        <ul>
-          <li><a href="index.html" class="topnav_item">Home</a></li>
-          <li><a href="services.html" class="topnav_item">Services</a></li>
-          <li><a href="gallery.html" class="topnav_item">Gallery</a></li>
-          <li><a href="booking.html" class="topnav_item">Booking</a></li>
-          <li><a href="contact.html" class="topnav_item">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="w3-bar w3-card-4 w3-padding-32" style="background-color: #f1f3e0; color:#536550 font-family: Arial, Helvetica, sans-serif; align-items: center;">
+        <img src="images/Logo.png" class="w3-left" alt="line drawing of dog sitting profile" width="90" height="90">
+        <h1 class="w3-left w3-margin-top" style="font-family: Arial, Helvetica, sans-serif; color:#536550; font-size: 1.8em;"><b>Snazzy Paws Grooming</b></h1>
+        <div class="w3-right w3-margin-right">
+          <a href="index.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Home</a>
+          <a href="services.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Services</a>
+          <a href="gallery.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Gallery</a>
+          <a href="booking.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Booking</a>
+          <a href="contact.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Contact</a>
+          <a href="roster.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Staff</a>
+          <a href="privacy.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Privacy</a>
+         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-margin w3-padding-32 w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+        </div>
+        <div id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" style="background-color: #f1f3e0; color:#536550 font-family: Arial, Helvetica, sans-serif;">
+          <a href="index.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Home</a>
+          <a href="services.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Services</a>
+          <a href="gallery.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Gallery</a>
+          <a href="booking.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Booking</a>
+          <a href="contact.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Contact</a>
+          <a href="roster.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Staff</a>
+          <a href="privacy.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Privacy</a>
+        </div>
+      </div>
+      <script>
+        function myFunction() {
+        var x = document.getElementById("demo");
+        if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        } else { 
+        x.className = x.className.replace(" w3-show", "");
+        }
+        }
+      </script>
     </header>
     <!-- Here is our page's main content -->
     <main>
-      <table style="width: 100%">
-        <tr>
-          <th>Services</th>
-          <td>
-            <img src="images/Wash-dog.webp" alt="Dog being lathered with soap" width="800" height="650">
-            <div class="caption">
-              <p>Bath and Brush</p>
-              <p>$25 - $50</p>
-              <a href="booking.html" class="smallbutton">BOOK NOW</a>
+      <section style="background-color: #828567;">
+        <br>
+        <div class="w3-padding-32" style="margin-left:5%; color:#f1f3e0">
+          <h2><b>Services</b></h2>
+        </div>
+        <div class="w3-row-padding w3-margin-top" style="color:white;">
+            <div class="w3-third">
+              <div class="w3-card">
+                <img src="images/Wash-dog.jpg" style="width:100%">
+                <div class="w3-container">
+                  <h5>Bath and Brush</h5>
+                  <h5>$25 - $50</h5>
+                </div>
+              </div>
             </div>
-          </td>
-          <td>
-            <img src="images/Gallery-dog-5.webp" alt="Brown dog getting his face trimmed" width="800" height="650">
-            <div class="caption">
-              <p>Haircut</p>
-              <p>$45 - $85</p>
-              <a href="booking.html" class="smallbutton">BOOK NOW</a>
+            <div class="w3-third">
+            <div class="w3-card">
+              <img src="images/Gallery-dog-5.jpg" style="width:100%">
+              <div class="w3-container">
+                <h5>Haircut</h5>
+                <h5>$45 - $85</h5>
+              </div>
             </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img src="images/Nails-dog.webp" alt="Dog getting nails clipped" width="800" height="650">
-            <div class="caption">
-              <p>Nail trim</p>
-              <p>$10 - $20</p>
-              <a href="booking.html" class="smallbutton">BOOK NOW</a>
+          </div>
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="images/Nails-dog.jpg" style="width:100%">
+              <div class="w3-container">
+                <h5>Nail trim</h5>
+                <h5>$10 - $20</h5>
+              </div>
             </div>
-          </td>
-          <td>
-            <img src="images/Ear-dog.webp" alt="Small black and white dog getting his ears cleaned" width="800" height="650">
-            <div class="caption">
-              <p>Ear cleaning</p>
-              <p>$10 - $15</p>
-              <a href="booking.html" class="smallbutton">BOOK NOW</a>
+          </div>
+        </div>
+        <div class="w3-row-padding w3-margin-top" style="color:white;">
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="images/Ear-dog.jpg" style="width:100%">
+              <div class="w3-container">
+                <h5>Ear cleaning</h5>
+                <h5>$10 - $15</h5>
+              </div>
             </div>
-          </td>
-          <td>
-            <img src="images/Teeth-dog.webp" alt="Dog getting his teeth cleaned" width="800" height="650">
-            <div class="caption">
-              <p>Teeth Brushing</p>
-              <p>$10 - $15</p>
-              <a href="booking.html" class="smallbutton">BOOK NOW</a>
+          </div>
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="images/Teeth-dog.jpg" style="width:100%">
+              <div class="w3-container">
+                <h5>Teeth Brushing</h5>
+                <h5>$10 - $15</h5>
+              </div>
             </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img src="images/Spa-dog.webp" alt="Dog relaxing with towel on head and cucumber on eyes" width="800" height="650">
-            <div class="caption">
-              <p>Spa Package</p>
-              <p>$75 - $150</p>
-              <a href="booking.html" class="smallbutton">BOOK NOW</a>
+          </div>
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="images/Spa-dog.jpg" style="width:100%">
+              <div class="w3-container">
+                <h5>Spa Package</h5>
+                <h5>$75 - $150</h5>
+              </div>
             </div>
-          </td>
-          <td>
-            <img src="images/Gallery-dog-1.webp" alt="Long-haired dog with hair blowing in the wind on a green background" width="800" height="650">
-            <div class="caption">
-              <p>Special-breed cut</p>
-              <p>$15 - $25</p>
-              <a href="booking.html" class="smallbutton">BOOK NOW</a>
+          </div>
+        </div>
+        <div class="w3-row-padding w3-margin-top" style="color:white;">
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="images/Gallery-dog-1.jpg" style="width:100%">
+              <div class="w3-container">
+                <h5>Special-breed Cut</h5>
+                <h5>$15 - $25</h5>
+              </div>
             </div>
-          </td>
-          <td>
-            <img src="images/Gallery-dog-6.webp" alt="Small dog getting his legs trimmed" width="800" height="650">
-            <div class="caption">
-              <p>Full Grooming Package</p>
-              <p>$60 - $120</p>
-              <a href="booking.html" class="smallbutton">BOOK NOW</a>
+          </div>
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="images/Gallery-dog-6.jpg" style="width:100%">
+              <div class="w3-container">
+                <h5>Full Grooming Package</h5>
+                <h5>$60 - $120</h5>
+              </div>
             </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img src="images/De-shedding-Treatment.webp" alt="Brown dog getting his ears scrubbed with soap" width="800" height="650">
-            <div class="caption">
-              <p>De-shedding treatment</p>
-              <p>$20 - $40</p>
-              <a href="booking.html" class="smallbutton">BOOK NOW</a>
+          </div>
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="images/De-shedding-Treatment.jpg" style="width:100%">
+              <div class="w3-container">
+                <h5>De-shedding treatment</h5>
+                <h5>$20 - $40</h5>
+              </div>
             </div>
-          </td>
-          <td>
-            <img src="images/Flea-and-Tick.webp" alt="Golden Retriever being rinsed off in the shower" width="800" height="650">
-            <div class="caption">
-              <p>Flea and tick treatment</p>
-              <p>$15 - $30</p>
-              <a href="booking.html" class="smallbutton">BOOK NOW</a>
+          </div>
+          <div class="w3-row-padding w3-margin-top">
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="images/Flea-and-Tick.jpg" style="width:100%">
+              <div class="w3-container">
+                <h5>Flea and tick treatment</h5>
+                <h5>$15 - $30</h5>
+              </div>
             </div>
-          </td>
-          <td>
-            <img src="images/Gallery-dog-3.webp" alt="Husky getting hair brushed" width="800" height="650">
-            <div class="caption">
-              <p>Express Service</p>
-              <p>$15 - $25</p>
-              <a href="booking.html" class="smallbutton">BOOK NOW</a>
+          </div>
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="images/Gallery-dog-3.jpg" style="width:100%">
+              <div class="w3-container">
+                <h5>Express Service</h5>
+                <h5>$15 - $25</h5>
+              </div>
             </div>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img src="images/Medicated-Bath.webp" alt="Medium sized dog in the bath covered in bubbles" width="800" height="650">
-            <div class="caption">
-              <p>Medicated bath</p>
-              <p>$20 - $40</p>
-              <a href="booking.html" class="smallbutton">BOOK NOW</a>
+          </div>
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="images/Medicated-Bath.jpg" style="width:100%">
+              <div class="w3-container">
+                <h5>Medicated Bath</h5>
+                <h5>$20 - $40</h5>
+              </div>
             </div>
-          </td>
-          <td>
-            <img src="images/Puppy.webp" alt="Small puppy being held in hands while bathed" width="800" height="650">
-            <div class="caption">
-              <p>Puppy Package</p>
-              <p>$30 - $60</p>
-              <a href="booking.html" class="smallbutton">BOOK NOW</a>
+          </div>
+          <div class="w3-row-padding w3-margin-top">
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="images/Puppy.jpg" style="width:100%">
+              <div class="w3-container">
+                <h5>Puppy Package</h5>
+                <h5>$30 - $60</h5>
+              </div>
             </div>
-          </td>
-          <td>
-            <img src="images/Senior-Dog.webp" alt="West Highland terrier panting and looking into camera" width="800" height="650">
-            <div class="caption">
-              <p>Senior Dog Package</p>
-              <p>$40 - $80</p>
-              <a href="booking.html" class="smallbutton">BOOK NOW</a>
+          </div>
+          <div class="w3-third">
+            <div class="w3-card">
+              <img src="images/Senior-Dog.jpg" style="width:100%">
+              <div class="w3-container">
+                <h5>Senior Dog Package</h5>
+                <h5>$40 - $80</h5>
+              </div>
             </div>
-          </td>
-        </tr>
-      </table>
+          </div>
+        </div>
+        </div>
+        <br>
+        <br>
+        <br>
+      </section>
     </main>
     <!-- And here is our main footer that is used across all the pages of our website -->
     <footer class="footer">
       <div class="footercolumn">
-        <h2>Contact</h2>
+        <h2><b>Contact</b></h2>
         <p>Email: snazzypaws@gmail.com</p>
         <p>Phone: 123 456 7890</p>
         <p>Opening Hours: 8am - 6pm</p>

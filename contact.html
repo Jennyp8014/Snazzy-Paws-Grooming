@@ -3,74 +3,107 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Snazzy Paws Grooming Contact" content="Find contact information and information about Snazzy Paws Grooming">
     <title>Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <!-- Here is our main header that is used across all the pages of our website -->
+     <!-- This is where I have implemented W3.CSS to create a new navigation menu -->
     <header class="header" id="container">
-      <img src="images/Logo.png" class="logo" alt="line drawing of dog sitting profile" width="90" height="90">
-      <h1>Snazzy Paws Grooming</h1>
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-      <nav class="topnav">
-        <ul>
-          <li><a href="index.html" class="topnav_item">Home</a></li>
-          <li><a href="services.html" class="topnav_item">Services</a></li>
-          <li><a href="gallery.html" class="topnav_item">Gallery</a></li>
-          <li><a href="booking.html" class="topnav_item">Booking</a></li>
-          <li><a href="contact.html" class="topnav_item">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="w3-bar w3-card-4 w3-padding-32" style="background-color: #f1f3e0; color:#536550 font-family: Arial, Helvetica, sans-serif; align-items: center;">
+        <img src="images/Logo.png" class="w3-left" alt="line drawing of dog sitting profile" width="90" height="90">
+        <h1 class="w3-left w3-margin-top" style="font-family: Arial, Helvetica, sans-serif; color:#536550; font-size: 1.8em;"><b>Snazzy Paws Grooming</b></h1>
+        <div class="w3-right w3-margin-right">
+          <a href="index.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Home</a>
+          <a href="services.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Services</a>
+          <a href="gallery.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Gallery</a>
+          <a href="booking.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Booking</a>
+          <a href="contact.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Contact</a>
+          <a href="roster.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Staff</a>
+          <a href="privacy.html" class="w3-bar-item w3-button w3-padding-32 w3-hide-small">Privacy</a>
+         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-margin w3-padding-32 w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+        </div>
+        <div id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium" style="background-color: #f1f3e0; color:#536550 font-family: Arial, Helvetica, sans-serif;">
+          <a href="index.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Home</a>
+          <a href="services.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Services</a>
+          <a href="gallery.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Gallery</a>
+          <a href="booking.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Booking</a>
+          <a href="contact.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Contact</a>
+          <a href="roster.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Staff</a>
+          <a href="privacy.html" class="w3-bar-item w3-button w3-padding-32" style="text-align:center;">Privacy</a>
+        </div>
+      </div>
+      <script>
+        function myFunction() {
+        var x = document.getElementById("demo");
+        if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        } else { 
+        x.className = x.className.replace(" w3-show", "");
+        }
+        }
+      </script>
     </header>
     <!-- Here is our page's main content -->
     <main>
-        <section class="contactrow1">
-          <div class="contactcolumn2">
-            <h2>Contact - About Us</h2>
+        <section class="w3-row-padding w3-mobile w3-padding-32" style="background-color:#54563e; color:white;">
+          <div class="w3-quarter" style="margin-left:5%;">
+            <h2><b>Contact - About Us</b></h2>
+            <br>
             <img src="images/Gallery-dog-7.webp" alt="Small golden dog wearing a bandana" width="400" height="650">
+            <br>
           </div>
-          <div class="bookingcolumn2">
+          <div class="w3-third w3-mobile w3-padding-16" style="margin-top:5%;">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dignissimos, eos quisquam, nulla quidem eveniet minima adipisci aliquam est id suscipit quaerat. Rem ipsa asperiores sequi fuga dolorum itaque est. Rerum dignissimos, eos quisquam, nulla quidem eveniet minima adipisci aliquam est id suscipit quaerat. Rem ipsa asperiores sequi fuga dolorum itaque est.</p>
+            <p>Rerum dignissimos, eos quisquam, nulla quidem eveniet minima adipisci aliquam est id suscipit quaerat. Rem ipsa asperiores sequi fuga dolorum itaque est. Rerum dignissimos, eos quisquam, nulla quidem eveniet minima adipisci aliquam est id suscipit quaerat. Rem ipsa asperiores sequi fuga dolorum itaque est.</p>
           </div>
         </section>
-        <section class="contactrow2">
-          <div class="contactcolumn2">
-            <h3>Location</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis ad harum soluta, accusamus sed, magni dolorum minima incidunt optio, provident ratione. Officia, vel! Ipsum expedita odit molestias nesciunt facilis.</p>
-          </div>
-          <div class="contactcolumn3">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d907036.5800243929!2d152.30930583368368!3d-27.372228613212435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93f0bb1d4a0365%3A0xad3d4e5b9c3faae8!2sSnazzy%20Paws%20Dog%20Grooming!5e0!3m2!1sen!2sau!4v1765068963803!5m2!1sen!2sau" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </section>
-        <section class="contactrow3">
-          <h3>Contact us</h3><br>
-          <form action="/action_page.php">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="email">Email address:</label><br>
-            <input type="text" id="email" name="email"><br><br>
-            <label for="phone">Phone number:</label><br>
-            <input type="text" id="phone" name="phone"><br><br>
-            <label for="comment">Comment:</label><br>
-            <input id="comment" name="comment" placeholder="Type your message here..."><br><br><br><br>
-            <input type="submit" value="Submit">
-          </form>
-        </section>
+        <section class="w3-row-padding" style="background-color: #707457;">
+        <div class="w3-quarter w3-padding-32" style="margin-left:5%; color:rgb(255, 255, 255);">
+        <h3><b>Location</b></h3>
+        <p>Rerum dignissimos, eos quisquam, nulla quidem eveniet minima adipisci aliquam est id suscipit quaerat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dignissimos, eos quisquam, nulla quidem</p>
+        <p>Opening Hours: 8am - 6pm</p>
+      </div>
+      <div class="w3-quarter" style="color: #707457;">
+        <p>Location</p>
+      </div>
+      <div class="w3-quarter w3-padding-32" style="margin-right: 5%; margin-left:5%;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d907036.5800243929!2d152.30930583368368!3d-27.372228613212435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93f0bb1d4a0365%3A0xad3d4e5b9c3faae8!2sSnazzy%20Paws%20Dog%20Grooming!5e0!3m2!1sen!2sau!4v1765068963803!5m2!1sen!2sau" width="400" height="200" class="footermap" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      </section>
+        <section class="w3-row-padding w3-padding-64" style="background-color:#f1f3e0; color:#5e6146">
+        <h3 style="margin-left:5%;"><b>Contact Us</b></h3>
+        <br>
+        <form class="w3-container" style="margin-left:5%">
+          <label>Name</label>
+          <input class="w3-input" type="text">
+          <br>
+          <label>Email Address</label>
+          <input class="w3-input" type="text">
+          <br>
+          <label>Comment</label>
+          <input class="w3-input" type="text">
+          <br>
+          <br>
+        </form>
+      </section>
     </main>
     <!-- And here is our main footer that is used across all the pages of our website -->
-    <footer class="footer">
-      <div class="footercolumn">
-        <h2>Contact</h2>
+    <footer class="w3-row-padding" style="background-color: #5e6146;">
+      <div class="w3-quarter w3-padding-32" style="margin-left:5%; color:white">
+        <h2><b>Contact</b></h2>
         <p>Email: snazzypaws@gmail.com</p>
         <p>Phone: 123 456 7890</p>
         <p>Opening Hours: 8am - 6pm</p>
       </div>
-      <div class="footercolumn1">
-        <a href="booking.html" class="button">BOOK NOW</a>
+      <div class="w3-quarter w3-padding-64" style="margin-top:2%;">
+        <a href="booking.html" class="w3-button" style="color:white; background-color: #828567; margin-left:5%;">BOOK NOW</a>
       </div>
-      <div class="footercolumn2">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d907036.5800243929!2d152.30930583368368!3d-27.372228613212435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93f0bb1d4a0365%3A0xad3d4e5b9c3faae8!2sSnazzy%20Paws%20Dog%20Grooming!5e0!3m2!1sen!2sau!4v1765068963803!5m2!1sen!2sau" width="600" height="200" class="footermap" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="w3-quarter w3-padding-32" style="margin-right: 5%; margin-left:5%;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d907036.5800243929!2d152.30930583368368!3d-27.372228613212435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b93f0bb1d4a0365%3A0xad3d4e5b9c3faae8!2sSnazzy%20Paws%20Dog%20Grooming!5e0!3m2!1sen!2sau!4v1765068963803!5m2!1sen!2sau" width="400" height="200" class="footermap" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </footer>
   </body>
